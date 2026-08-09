@@ -1,0 +1,6 @@
+interface:
+  display_name: "Voice Edit"
+  short_description: "Preserve your voice while tightening prose"
+  default_prompt: "Use $voice-edit to refine this prose while preserving its meaning and voice."
+policy:
+  allow_implicit_invocation: false

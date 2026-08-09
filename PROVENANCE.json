@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "package": "voice-edit",
+  "relationship": "codex_adaptation",
+  "primary_source": {
+    "repository": "https://github.com/petergyang/no-ai-slop",
+    "baseline_commit": "d30eddb9e04562234f2070b5ee63ca4649d9a05e",
+    "license": "MIT",
+    "license_path": "LICENSES/no-ai-slop-MIT.txt",
+    "adapted_concepts": [
+      "minimum-effective editing",
+      "voice preservation",
+      "contextual prose-pattern review"
+    ]
+  },
+  "local_predecessor": {
+    "skill": "no-ai-slop",
+    "baseline_commit": "a80787f49925cb343f626b39439084d63b8a7a25",
+    "migration": "replaced_by_voice-edit"
+  },
+  "research_only_sources": [
+    {
+      "repository": "https://github.com/blader/humanizer",
+      "reviewed_commit": "523374dee72d67c7b2b5f858ea0094ffda49c3ac",
+      "content_included": false,
+      "reason": "licensing provenance requires clarification before reuse"
+    }
+  ]
+}
