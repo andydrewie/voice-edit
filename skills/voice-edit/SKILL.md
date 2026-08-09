@@ -31,7 +31,7 @@ Inventory the content that must survive:
 - requirements, commitments, exceptions, negation, attribution, and legal or safety qualifications;
 - the writer's characteristic vocabulary, cadence, bluntness, humor, formality, uncertainty, and useful rough edges.
 
-Preserve verbatim spans exactly unless the user expressly includes them in the edit. Preserve the semantic value and calibration of ordinary quantitative expressions; preserve output established by `$quantitative-grounding` lexically exactly. Never invent evidence, examples, opinions, anecdotes, reactions, humor, or lived experience. Do not turn uncertainty into confidence or a possibility into a fact. If the intended meaning is genuinely ambiguous, ask rather than guess.
+Preserve verbatim spans exactly unless the user expressly requests a specific change to them. Treat that requested delta as authorized while protecting every other span. Quotation marks used only to delimit the user's pasted edit target are transport syntax, not part of the artifact; quotations inside the target remain verbatim. Preserve the semantic value and calibration of ordinary quantitative expressions; preserve output established by `$quantitative-grounding` lexically exactly unless the user explicitly changes it. Never invent evidence, examples, opinions, anecdotes, reactions, humor, or lived experience. Do not turn uncertainty into confidence or a possibility into a fact. If the intended meaning is genuinely ambiguous, ask rather than guess. If the user requests unsupported specificity, request the missing evidence instead of fabricating it.
 
 ## Edit workflow
 
@@ -40,7 +40,7 @@ Preserve verbatim spans exactly unless the user expressly includes them in the e
 3. Read [references/patterns.md](references/patterns.md) only for an audit, a heavy rewrite, or when the draft has repeated stylistic problems. Treat every pattern as a diagnostic prompt, never a universal ban.
 4. Apply the minimum effective edit. Preserve strong sentences and intentional irregularity. A legitimate result may be unchanged prose.
 5. Re-read source and edit side by side. Verify every protected item and the overall meaning, not just surface tokens.
-6. For long or technical file-based edits, optionally run `python3 <skill-directory>/scripts/check_preservation.py SOURCE EDITED --json`, resolving `<skill-directory>` from this `SKILL.md`. Resolve every reported difference, but do not treat a clean result as proof of semantic equivalence.
+6. For long or technical file-based edits, optionally run `python3 <skill-directory>/scripts/check_preservation.py SOURCE EDITED --json`, resolving `<skill-directory>` from this `SKILL.md`. Resolve every unexpected difference and explicitly account for user-authorized deltas, but do not treat a clean result as proof of semantic equivalence.
 7. Read the result aloud mentally. Remove editing artifacts such as flattened rhythm, newly generic language, or suspiciously uniform paragraphs.
 
 Prefer concrete nouns and direct verbs when the source supports them. Keep passive voice, repetition, fragments, specialized terminology, punctuation, and unusual structure when they serve meaning or voice. Preserve canonical technical terms established by the source or `$precise-terms`.

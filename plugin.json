@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "voice-edit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An explicit-use Codex prose editor that improves clarity and cadence while preserving meaning, evidence, and the writer's supplied voice.",
   "author": {
     "name": "Andrew Fai",

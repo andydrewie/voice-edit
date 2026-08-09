@@ -31,6 +31,8 @@ class BehaviorFixtureTests(unittest.TestCase):
             "do_not_modify_file_without_explicit_edit_request",
             "preserve_numbers_ranges_units",
             "preserve_uncertainty",
+            "apply_authorized_protected_delta",
+            "edit_transport_delimited_target",
             "preserve_structured_spans",
             "do_not_score_authorship",
             "do_not_optimize_detector_evasion",

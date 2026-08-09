@@ -13,7 +13,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
 PLUGIN_NAME = "voice-edit"
-PLUGIN_VERSION = "1.0.0"
+PLUGIN_VERSION = "1.0.1"
 UPSTREAM = "https://github.com/petergyang/no-ai-slop"
 UPSTREAM_COMMIT = "d30eddb9e04562234f2070b5ee63ca4649d9a05e"
 PLUGIN_FIELDS = {
@@ -182,7 +182,7 @@ def validate_skill() -> None:
         "Apply the minimum effective edit.",
         "A legitimate result may be unchanged prose.",
         "never silently weaken or delete it.",
-        "preserve output established by `$quantitative-grounding` lexically exactly.",
+        "preserve output established by `$quantitative-grounding` lexically exactly",
         "do not treat a clean result as proof of semantic equivalence",
     ):
         if phrase not in skill_text:

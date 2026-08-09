@@ -28,6 +28,16 @@
       "expected": ["preserve_numbers_ranges_units", "preserve_uncertainty"]
     },
     {
+      "id": "authorized-version-delta",
+      "prompt": "Use $voice-edit on CHANGELOG.md: change 1.2.0 to 1.2.1 and tighten the note.",
+      "expected": ["apply_authorized_protected_delta", "preserve_other_protected_content"]
+    },
+    {
+      "id": "transport-quotes",
+      "prompt": "Use $voice-edit on this draft: \"We was late, but it were fine.\"",
+      "expected": ["edit_transport_delimited_target", "preserve_artifact_quotations"]
+    },
+    {
       "id": "structured-spans",
       "prompt": "Use $voice-edit on prose containing frontmatter, code, quotations, [links](https://example.com), and [^1].",
       "expected": ["preserve_structured_spans"]
